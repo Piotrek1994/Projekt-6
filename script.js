@@ -12,3 +12,13 @@ const facts = [
 	'Żeby wejść na Wieżę Eiffla trzeba pokonać aż 1710 stopni.'
 ]
 
+
+const day = new Date()
+currentDay.textContent = day.toLocaleDateString("pl", {weekday: "long"})
+
+const showRandomFact = () => {
+	const number = Math.floor(Math.random() * (facts.length-1))
+	funFact.textContent = facts[number]
+}
+
+showRandomFact();
